@@ -1,0 +1,30 @@
+﻿<Page x:Class="WpfApp1.MainPage"
+	  xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+	  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+	  xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+	  xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+	  xmlns:local="clr-namespace:WpfApp1"
+	  mc:Ignorable="d" 
+	  d:DesignHeight="450" d:DesignWidth="800"
+	  Title="MainPage" MinHeight="400" MinWidth="600">
+	<Page.Resources>
+		<ResourceDictionary Source="BaseDict.xaml"/>
+	</Page.Resources>
+	
+	<DockPanel Name="Main">
+		<DockPanel Name="Top" DockPanel.Dock="Top" Background="{StaticResource BaseColor}">
+			<TextBlock DockPanel.Dock="Top" Style="{StaticResource MainHeader1}">MARATHON SKILLS 2016</TextBlock>
+			<TextBlock DockPanel.Dock="Top" Style="{StaticResource MainHeader2}">Москва, Россия</TextBlock>
+			<TextBlock DockPanel.Dock="Top" Style="{StaticResource MainHeader2}" Margin="0, 0, 0, 10">среда 21 октября 2016</TextBlock>
+		</DockPanel>
+		<Button DockPanel.Dock="Top" Style="{StaticResource MenuButton}" Click="Runner">Я хочу стать бегуном</Button>
+		<Button DockPanel.Dock="Top" Style="{StaticResource MenuButton}">Я хочу стать спонсором бегуна</Button>
+		<Button DockPanel.Dock="Top" Style="{StaticResource MenuButton}" Click="Info">Я хочу узнать больше о событии</Button>
+		<DockPanel DockPanel.Dock="Bottom" Background="{StaticResource BaseColor}">
+			<TextBlock DockPanel.Dock="Bottom" Style="{StaticResource MenuHeader3}">18 дней 8 часов и 17 минут до старта марафона</TextBlock>
+		</DockPanel>
+		<Label DockPanel.Dock="Bottom"/>
+		<Button DockPanel.Dock="Bottom" Style="{StaticResource LoginButton}" Click="Login">Login</Button>
+		<Label DockPanel.Dock="Bottom"/>
+	</DockPanel>
+</Page>
